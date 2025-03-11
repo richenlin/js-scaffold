@@ -21,7 +21,7 @@
     "dist"
   ],
   "scripts": {
-    "prebuild": "rm -rf dist",
+    "prebuild": "del-cli --force dist",
     "build:cjs": "babel src --extensions .js --out-dir dist/cjs --config-file ./babel-cjs.config.json",
     "build:esm": "babel src --extensions .js --out-dir dist/esm --config-file ./babel-esm.config.json",
     "build": "npm run build:cjs && npm run build:esm",
@@ -48,6 +48,7 @@
     "@openapitools/openapi-generator-cli": "^2.17.0",
     "better-docs": "^2.7.3",
     "cpx": "^1.2.1",
+    "del-cli": "^6.0.0",
     "docdash": "^2.0.2",
     "documentation": "^14.0.3",
     "eslint": "^9.22.0",
