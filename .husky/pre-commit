@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-npx lint-staged
+npm run lint
 # 校验文档完整性
-npm run docs:lint && git add docs/api/
+npm run docs && git add docs/api/
