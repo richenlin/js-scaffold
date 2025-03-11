@@ -2,4 +2,5 @@
 . "$(dirname -- "$0")/_/husky.sh"
 
 npx lint-staged
-npx lint-staged
+# 校验文档完整性
+npm run docs:lint && git add docs/api/

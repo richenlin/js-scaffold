@@ -1,0 +1,10 @@
+theme:
+  name: 'better-docs'
+  package: 'docdash'
+  linkFormat: 'default'
+output: 'docs/api'
+entryPoints: ['src/index.js']
+moduleGroups:
+  - name: 'API Collections'
+    include: ['src/*.api.js']
+parseExtension: '.js'
